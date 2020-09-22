@@ -6,9 +6,15 @@ const ListLink = props => (
   </li>
 )
 
+const Footer = props => (
+  <footer>
+    This is the footer.....
+  </footer>
+)
+
 export default function Layout({ children }) {
   return (
-    <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
+    <div className="layout-container">
       <header style={{ marginBottom: `1.5rem` }}>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
           <h3 style={{ display: `inline` }}>Ryan Welch</h3>
@@ -16,10 +22,12 @@ export default function Layout({ children }) {
         <ul style={{ listStyle: `none`, float: `right` }}>
           <ListLink to="/">Home</ListLink>
           <ListLink to="/about/">About</ListLink>
+          <ListLink to="/projects/">Projects</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
         </ul>
       </header>
       {children}
+      <Footer />
     </div>
   )
 }

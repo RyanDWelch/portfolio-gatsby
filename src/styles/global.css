@@ -1,0 +1,21 @@
+html {
+    background-color: lavenderblush;
+  }
+
+.layout-container {
+    margin: 3rem auto;
+    max-width: 650px;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: #fff;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
