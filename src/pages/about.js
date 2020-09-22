@@ -4,7 +4,8 @@ import Layout from "../components/layout"
 export default function About() {
   return (
     <Layout>
-      <h1>About Page!</h1>
+      <h1>About Me</h1>
+      <p>I'm really interested in web development.</p>
     </Layout>
   )
 }

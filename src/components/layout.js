@@ -6,10 +6,15 @@ const ListLink = props => (
   </li>
 )
 
-const Footer = props => (
-  <footer>
-    This is the footer.....
-  </footer>
+const Navigation = () => (
+  <nav>
+    <ul>
+      <ListLink to="/">Home</ListLink>
+      <ListLink to="/about/">About</ListLink>
+      <ListLink to="/projects/">Projects</ListLink>
+      <ListLink to="/contact/">Contact</ListLink>
+    </ul>
+  </nav>
 )
 
 export default function Layout({ children }) {
@@ -19,15 +24,9 @@ export default function Layout({ children }) {
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
           <h3 style={{ display: `inline` }}>Ryan Welch</h3>
         </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/projects/">Projects</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
-        </ul>
+        <Navigation />
       </header>
       {children}
-      <Footer />
     </div>
   )
 }
