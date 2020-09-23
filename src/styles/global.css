@@ -1,17 +1,5 @@
 html {
     background-color: lavenderblush;
-  }
-
-.layout-container {
-    margin: 3rem auto;
-    max-width: 650px;
-    padding: 0 1rem;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header a {
@@ -19,6 +7,5 @@ header a {
 }
 
 nav ul {
-    list-style: outside none none;
-
+    list-style: none;
 }
