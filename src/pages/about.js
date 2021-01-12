@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Layout>
       <h1>About Me</h1>
-      <p>I'm really interested in web development.</p>
+      <p>I'm a web developer, I love making things and solving problems.</p>
     </Layout>
   )
 }

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledLayoutContainer = styled.div`
-  margin: 3rem auto;
+  margin: 2rem auto;
   max-width: 650px;
   padding: 0 1rem;
 `
@@ -40,10 +40,10 @@ const Navigation = () => (
 const Footer = () => (
   <footer>
     <ul>
-      <ListLink to="/">Home</ListLink>
-      <ListLink to="/about/">About</ListLink>
-      <ListLink to="/projects/">Projects</ListLink>
-      <ListLink to="/contact/">Contact</ListLink>
+      <ListLink to="/">Github</ListLink>
+      <ListLink to="/">Twitter</ListLink>
+      <ListLink to="/">Email</ListLink>
+      <ListLink to="/">Other</ListLink>
     </ul>
   </footer>
 )
