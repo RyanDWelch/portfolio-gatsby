@@ -37,16 +37,28 @@ const Navigation = () => (
   </nav>
 )
 
+const Footer = () => (
+  <footer>
+    <ul>
+      <ListLink to="/">Home</ListLink>
+      <ListLink to="/about/">About</ListLink>
+      <ListLink to="/projects/">Projects</ListLink>
+      <ListLink to="/contact/">Contact</ListLink>
+    </ul>
+  </footer>
+)
+
 export default function Layout({ children }) {
   return (
     <StyledLayoutContainer className="layout-container">
       <StyledHeader>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline` }}>Ryan Welch</h3>
+          <h3 style={{ display: `inline`}}>Ryan Welch</h3>
         </Link>
         <Navigation />
-      </StyledHeader>
+      </StyledHeader> 
       {children}
+      <Footer />
     </StyledLayoutContainer>
   )
 }

@@ -1,11 +1,23 @@
-html {
-    background-color: lavenderblush;
-}
 
-header a {
+.layout-container a {
     text-decoration: none;
 }
 
 nav ul {
     list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
