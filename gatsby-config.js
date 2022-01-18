@@ -13,10 +13,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Permanent+Marker`
+          `Inconsolata`,
+          `source sans pro\:300`
         ],
         display: 'swap'
       }
-    }
+    },`gatsby-plugin-fontawesome-css`
   ]
 }

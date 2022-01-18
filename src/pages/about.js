@@ -4,8 +4,13 @@ import Layout from "../components/layout"
 export default function About() {
   return (
     <Layout>
-      <h1>About Me</h1>
-      <p>I'm a web developer, I love making things and solving problems.</p>
+      <h2>Hi there!</h2>
+      <img
+        src={"/happy-clown-612x612.jpg"}
+        alt="logo"
+        className="happy-clown"
+      />
+      <p>I'm not a clown, you are.</p>
     </Layout>
   )
 }
