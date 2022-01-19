@@ -1,1 +1,1 @@
-Ryan Welch's web development portfolio built with Gatsby in the year 2020.
+Ryan Welch's web development portfolio built with Gatsby in the year 2022.
