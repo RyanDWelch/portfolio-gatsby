@@ -73,13 +73,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.happy-clown {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
 html.theme-dark .toggle-moon {
   display: none;
 }
@@ -89,16 +82,4 @@ html.theme-light .toggle-sun {
 
 #switch:hover {
   cursor: pointer;
-}
-
-ul.projects-list {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr;
-}
-
-ul.projects-list li {
-  list-style: none;
-  border: 1px solid black;
-  padding: 10px;
 }

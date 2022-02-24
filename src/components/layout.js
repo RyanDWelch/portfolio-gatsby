@@ -7,7 +7,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faSun } from "@fortawesome/free-solid-svg-icons"
 import { faMoon } from "@fortawesome/free-solid-svg-icons"
 
-
 const StyledLayoutContainer = styled.div`
   margin: 2rem auto;
   max-width: 950px;
@@ -37,34 +36,29 @@ const ListLink = props => (
   </StyledListLinkLi>
 )
 
-
-
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
-  localStorage.setItem('theme', themeName);
-  document.documentElement.className = themeName;
+  localStorage.setItem("theme", themeName)
+  document.documentElement.className = themeName
 }
 
 // function to toggle between light and dark theme
 function toggleTheme() {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-light');
-    } else {
-        setTheme('theme-dark');
-    }
+  if (localStorage.getItem("theme") === "theme-dark") {
+    setTheme("theme-light")
+  } else {
+    setTheme("theme-dark")
+  }
 }
 
 // Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('theme') === 'theme-dark') {
-        setTheme('theme-dark');
-    } else {
-        setTheme('theme-light');
-    }
-})();
-
-
-
+;(function () {
+  if (localStorage.getItem("theme") === "theme-dark") {
+    setTheme("theme-dark")
+  } else {
+    setTheme("theme-light")
+  }
+})()
 
 const Navigation = () => (
   <nav>
@@ -75,8 +69,18 @@ const Navigation = () => (
       {/* <ListLink to="/"><FontAwesomeIcon icon={faGithub} /></ListLink> */}
       <ListLink>
         <button id="switch" onClick={toggleTheme}>
-          <FontAwesomeIcon icon={faSun} className="toggle-sun" alt="Switch to Light Mode" title="Switch to Light Mode"/>
-          <FontAwesomeIcon icon={faMoon} className="toggle-moon" alt="Switch to Dark Mode" title="Switch to Dark Mode"/>
+          <FontAwesomeIcon
+            icon={faSun}
+            className="toggle-sun"
+            alt="Switch to Light Mode"
+            title="Switch to Light Mode"
+          />
+          <FontAwesomeIcon
+            icon={faMoon}
+            className="toggle-moon"
+            alt="Switch to Dark Mode"
+            title="Switch to Dark Mode"
+          />
         </button>
       </ListLink>
     </ul>
@@ -88,10 +92,10 @@ export default function Layout({ children }) {
     <StyledLayoutContainer className="layout-container">
       <StyledHeader>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h1 style={{ display: `inline`}}>Ryan D. Welch</h1>
+          <h1 style={{ display: `inline` }}>Ryan Welch</h1>
         </Link>
         <Navigation />
-      </StyledHeader> 
+      </StyledHeader>
       <PageContentsContainer className="page-contents-container">
         {children}
       </PageContentsContainer>
